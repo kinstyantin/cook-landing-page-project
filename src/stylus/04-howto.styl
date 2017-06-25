@@ -1,0 +1,48 @@
+.howto
+  inner-size()
+  inner-padding()
+
+.howto__heading-desc
+  display block
+  margin-bottom 20px
+  text-align center
+  font-size 18px
+  font-weight bold
+  color #ff8400
+  text-transform uppercase
+
+.howto-list
+  display flex
+  flex-wrap wrap
+  text-align center
+
+.howto-list__item
+  width 390px
+  @media(max-width 1170px)
+    width 33.33333333333333%
+  height 235px
+  display flex
+  flex-direction column
+  justify-content flex-end
+
+.howto-list__item--firt--row
+  margin-bottom 90px
+
+.howto-list__heading
+  margin-bottom 25px
+
+// list item icons
+
+howto-icons(food)
+howto-icons(cart)
+howto-icons(gear)
+howto-icons(user)
+howto-icons(brief)
+howto-icons(mail)
+
+.howto-list__heading
+  color #343434
+  font-weight bold
+
+.howto-list__desc
+  color #5b5b5b

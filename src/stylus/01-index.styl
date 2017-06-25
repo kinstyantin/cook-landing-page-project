@@ -1,0 +1,80 @@
+// icomoon font
+
+icon-google = "\ea88"
+icon-facebook = "\ea90"
+icon-instagram = "\ea92"
+
+@font-face
+  font-family 'icomoon'
+  src url('fonts/icomoon.woff?n7gfbh') format('woff')
+  font-weight normal
+  font-style normal
+
+[class^="icon-"], [class*=" icon-"]
+  font-family 'icomoon' !important
+  speak none
+  font-style normal
+  font-weight normal
+  font-variant normal
+  text-transform none
+  line-height 1
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+.icon-google
+  &:before
+    content icon-google
+.icon-facebook
+  &:before
+    content icon-facebook
+.icon-instagram
+  &:before
+    content icon-instagram
+
+// general styles
+
+body
+  margin 0
+
+*
+  outline 1px solid navy
+
+h1, h2, h3, p, fieldset
+  margin 0
+  padding 0
+
+div, h1, h2, h3, p, a, button, input
+  box-sizing border-box
+
+body
+  font-family 'Droid Sans', sans-serif
+  font-size 18px
+
+
+// element styles
+
+.heading
+  margin-bottom 90px
+  font-size 36px
+  line-height 1
+  color #343434
+
+.heading--text-center
+  text-align center
+
+.heading--text-left
+  text-align left
+
+// import
+@import '02-var-mixins'
+@import '03-header'
+@import '04-howto'
+@import '05-download'
+@import '06-workflow'
+@import '07-subscribe'
+@import '08-testimonials'
+@import '09-info'
+@import '10-contact'
+@import '11-footer'

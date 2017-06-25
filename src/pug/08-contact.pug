@@ -1,0 +1,16 @@
+.contact#contact
+  form.contact-form
+    .contact-form__container
+      .contact-form__info
+        mixin input(name, placeholder)
+          input(
+            type='text'
+            name= name 
+            class='contact-form__input'
+            placeholder= placeholder
+          )
+        +input('name', 'Your name')
+        +input('email', 'Your email address')
+        +input('subject', 'Subject')
+      textarea.contact-form__message
+    button(type='submit' class='btn contact-form__submit') Contact now

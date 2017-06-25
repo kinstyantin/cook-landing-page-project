@@ -1,0 +1,8 @@
+.info#support
+  .info__inner
+    mixin item(name, info)
+      .info__item(class='info-item--'+ name)
+        span.info-text= info
+    +item('phone', '+7 (978) 000-00-00')
+    +item('mail', 'me@kinstyantin.xyz')
+    +item('location', 'Crimea')

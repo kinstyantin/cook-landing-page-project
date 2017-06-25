@@ -1,0 +1,30 @@
+.testimonials#stories
+  .testimonials__inner
+    h3.heading.heading--testimonials User stories
+    .stories
+      mixin client(name, fullName, comment)
+        .stories-story(class='stories-story--'+ name)
+          img.stories-story__img(src='img/clients/'+ name+ '.jpg')
+          span.stories-story__client-name= fullName
+          //- comment must be a single-line string!  
+          p(class='stories-story__comment')= comment 
+      +client(
+        'kostya', 
+        'Kostya Whatever',
+        'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.'
+      )
+      +client(
+        'andrey', 
+        'Andrey Akkacj',
+        'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.'
+      )
+      +client(
+        'petya', 
+        'Petya Piton',
+        'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.'
+      )
+      +client(
+        'vlad', 
+        'Vlad Alcoholic',
+        'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.'
+      )

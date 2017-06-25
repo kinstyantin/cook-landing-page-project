@@ -1,0 +1,12 @@
+.footer#footer
+  .footer__inner
+    .footer__copyright
+      p.footer-info Copyright by kinstyantin, 2017
+    .footer-soc
+      mixin socLink(socNetwork, name)
+        a(href='#').footer-soc__link= socNetwork
+          span(class='icon-'+ name)
+      +socLink('', 'facebook')
+      +socLink('Google', 'google')
+      +socLink('Instagram', 'instagram')
+  

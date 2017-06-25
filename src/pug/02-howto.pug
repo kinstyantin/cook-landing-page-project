@@ -1,0 +1,18 @@
+.howto#about
+  span.howto__heading-desc How it works
+  h3.heading.heading--text-center Lorem ipsum is simply
+  .howto-list
+    mixin listItem(name)
+      .howto-list__item(class='howto-list__item--' +name)&attributes(attributes)
+        span.howto-list__heading.
+          Lorem ipsum is simply dummy
+        p.howto-list__desc.
+          Lorem ipsum is simply dummy text of the printing and typesetting industry
+    //- -for(var i = 0; i <6; i++)
+    //-  +listItem
+    +listItem('food')(class='howto-list__item--firt--row')
+    +listItem('cart')(class='howto-list__item--firt--row')
+    +listItem('gear')(class='howto-list__item--firt--row')
+    +listItem('user')
+    +listItem('brief')
+    +listItem('mail')

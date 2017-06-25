@@ -1,0 +1,13 @@
+.header
+  .header__inner
+    .header-nav
+      - var linksList = ['About', 'Download', 'Workflow', 'Support', 'Stories', 'Contact']
+        each link in linksList
+          a(href='#' +link.toLowerCase()).header-nav__link= link
+    .header-content
+      h2(class='header-heading') Built with app designers in mind
+      p(class='header-desc').
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Lorem ipsum dolor sit amet.
+      a.link-btn(href='#') How it work
